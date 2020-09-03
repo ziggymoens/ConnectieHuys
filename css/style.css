@@ -9,3 +9,31 @@
     font-weight: bold;
     color: rgb(110, 180, 162);
 }
+
+#active-link:hover{
+    font-weight: bold;
+    color: rgb(110, 180, 162);
+}
+
+.img-center{
+    margin: 0 auto;
+}
+
+.link{
+    color: rgb(110, 180, 162);
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 10em;
+}
+
+.c{
+    font-size: x-large;
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(110, 180, 162);
+}
+
+.center{
+    width: 100%;
+    margin: 0 auto;
+}
