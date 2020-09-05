@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="/js/scripts.js"></script>
 </head>
   <body>
       <!-- section navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><img id="logo-navbar" src="img/logo_png.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,20 +43,26 @@
           </ul>
         </div>
       </nav>
+      <!--end of section navbar-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-      <div class="container" style="padding-top: 2em;">
+      <div class="container" style="padding-top: 3em;">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col">
             <img src="https://via.placeholder.com/450x400.png?text=400x400" class="img-responsive img-center" alt="Responsive image">
           </div>
-          <div class="col-sm-6 align-self-center">
+          <div class="col align-self-center">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, perferendis. Assumenda harum eaque voluptate eum, distinctio voluptas illum sunt quidem facere ipsum hic dolorum commodi, necessitatibus temporibus. Cupiditate, explicabo consequatur?
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor velit ullam reiciendis, placeat eum sequi iste deleniti nam magnam, obcaecati fugit voluptatibus fuga quisquam unde iusto cum? Labore, possimus libero.                          
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minima modi quod! Quos est rem magni sint nisi commodi modi, optio quidem sequi maxime dolore quasi iste tenetur, obcaecati itaque.
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, autem ab dignissimos minus qui voluptatibus? Unde aperiam doloribus repudiandae delectus. Libero voluptates voluptatum non officiis dolore repudiandae consequuntur minus eos!
               <br>
-              
+              <br>
               <a href="over-inge.html" class="link">Meer over Inge</a>
             </p>
             <br>
@@ -64,14 +72,33 @@
       </div>
       <br>
 
-      <div style="text-align: center; font-size: 3em;">
-        <a class="btn btn-lg" href="#" role="button"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>      
+      <div style="text-align: center; font-size: 3em; padding-top: 1.5em;">
+        <a class="btn btn-lg smooth-scroll" href="#infoConnectieHuys" role="button" id="arrowDown"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>      
       </div>
 
+      <div id="infoConnectieHuys">
       <div class="crop text-center">
-        <img class="home img-fluid" src="/img/logo_png_mini.png">
-        <h3 style="margin-top: -3em;">Over ConnectieHuys</h3>
+        <img class="home img-fluid" src="/img/logo_png_mini.png">        
       </div>
+      <div class="row paddingDiv">
+        <h3>Over ConnectieHuys</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum veritatis, labore, voluptatibus officia magni culpa ex repellat dignissimos dolorem alias dolor odit asperiores consequuntur tempore, sunt commodi. Quisquam, nobis laudantium.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aspernatur cupiditate, neque, dignissimos magnam laborum cumque nisi quo numquam pariatur possimus reiciendis facere. Expedita voluptatum repellat aliquid tenetur magni a.
+        </p>
+      </div>
+      <div class="row paddingDiv">
+        <h3>Wat we doen</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at iste mollitia aliquam impedit odio sunt quam magnam minus, eos, cum magni libero corrupti quo commodi earum, labore accusantium ab.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, vitae facilis voluptatem officiis et esse quo deleniti illum dolores harum at nisi consequatur dolorem! Eligendi officia accusantium illum molestias eos.          
+        </p>
+      </div>
+      <div class="row paddingDiv">
+        <h3>Waarom we dat doen</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at iste mollitia aliquam impedit odio sunt quam magnam minus, eos, cum magni libero corrupti quo commodi earum, labore accusantium ab.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, vitae facilis voluptatem officiis et esse quo deleniti illum dolores harum at nisi consequatur dolorem! Eligendi officia accusantium illum molestias eos.          
+        </p>
+      </div>
+      
 
       <!--Carousel C's-->
       <div class="container">
@@ -102,12 +129,10 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+      </div>
 
-      <!--end of section navbar-->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <div style="text-align: center; font-size: 3em; padding-bottom: 0.5em;">
+        <a class="btn btn-lg smooth-scroll" href="#" role="button" id="arrowUp"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>      
+      </div>      
   </body>
 </html>

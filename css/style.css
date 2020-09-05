@@ -37,3 +37,25 @@
     width: 100%;
     margin: 0 auto;
 }
+
+#infoConnectieHuys::before{
+display: block;
+content: " ";
+margin-top: -65px;
+height: 65px;
+visibility: hidden;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+.paddingDiv{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+html{
+    scroll-behavior: smooth;
+}
