@@ -26,6 +26,13 @@
     padding-top: 10em;
 }
 
+.mail{
+        color: rgb(110, 180, 162);
+        font-weight: normal;
+        text-decoration: underline;
+        padding-top: 10em;
+}
+
 .c{
     font-size: x-large;
     font-style: normal;
@@ -58,4 +65,12 @@ visibility: hidden;
 
 html{
     scroll-behavior: smooth;
+}
+
+.list-unstyled{
+    margin-top: 1rem;
+}
+
+#ulLi{
+    margin-bottom: 1em;
 }
