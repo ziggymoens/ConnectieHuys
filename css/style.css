@@ -1,13 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 #logo-navbar{
-    height: 150px;
-    width: 150px;
-    margin-top: -0.5em;
-    margin-bottom: -1.5em;
+    height: 200px;
+    width: 200px;
+    margin-top: -1em;
+    margin-bottom: -2em;
 }
 
 #active-link{
     font-weight: bold;
-    color: rgb(110, 180, 162);
+    color: cmyk(56, 14, 40, 0);
 }
 
 #active-link:hover{
@@ -27,10 +32,10 @@
 }
 
 .mail{
-        color: rgb(110, 180, 162);
-        font-weight: normal;
-        text-decoration: underline;
-        padding-top: 10em;
+    color: rgb(110, 180, 162);
+    font-weight: normal;
+    text-decoration: underline;
+    padding-top: 10em;
 }
 
 .c{
@@ -71,6 +76,116 @@ html{
     margin-top: 1rem;
 }
 
+
+
 #ulLi{
     margin-bottom: 1em;
+}
+
+body{
+    margin: 0;
+    font-size: 17px;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    animation: bodyVisible;
+    animation-duration: 2s;
+}
+
+#showcase{
+    background-image: url('../img/logo_png.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#showcase h1{
+    font-size: 120px;
+    line-height: 1.2;
+    color: #f9f9f9;
+    text-shadow: 5px 5px 7px rgb(110, 180, 162);
+}
+
+#showcase p{
+    font-size: 20px;
+    float: right;
+}
+
+#showcase .button{
+    opacity: 0;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(110, 180, 162);
+    border: f9f9f9f9 1px solid;
+    float: right;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#showcase:hover .button{
+    transition: 1s ease-in-out;
+    opacity: 1;
+}
+
+#showcase .button:hover{
+    background: rgb(110, 180, 162);;
+    color: #ffffff;
+}
+
+.logoHeader{
+    height: 100vh;
+}
+
+#visible{
+    animation: logoVisibleHidden;
+    animation-duration: 4s;    
+}
+
+#bodyHuys{
+    animation: bodyVisible;
+    animation-duration: 1s;
+}
+
+#logoVisibleOnLoad{
+    height: 100vh;
+}
+
+#logoVisibleOnLoad:hover{
+    transition: 1s ease-in-out;
+    opacity: 75%;
+}
+
+
+@viewport{
+    width: device-width;
+    height: 100vh;
+    zoom: 1;
+}
+
+@keyframes bodyVisible{    
+    from {
+        opacity: 0;
+     }
+    50% {
+        opacity: 0.5;
+     }
+    to {
+        opacity: 1;
+  }
+}
+
+@keyframes logoVisibleHidden{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;        
+    }
 }
