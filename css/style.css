@@ -1,61 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#logo-navbar{
-    height: 200px;
-    width: 200px;
-    margin-top: -1em;
-    margin-bottom: -2em;
+#logo-navbar {
+  height: 200px;
+  width: 200px;
+  margin-top: -1em;
+  margin-bottom: -2em;
 }
 
-#active-link{
-    font-weight: bold;
-    color: cmyk(56, 14, 40, 0);
+#active-link {
+  font-weight: bold;
+  color: cmyk(56, 14, 40, 0);
 }
 
-#active-link:hover{
-    font-weight: bold;
-    color: rgb(110, 180, 162);
+#active-link:hover {
+  font-weight: bold;
+  color: rgb(110, 180, 162);
 }
 
-.img-center{
-    margin: 0 auto;
+.img-center {
+  margin: 0 auto;
 }
 
-.link{
-    color: rgb(110, 180, 162);
-    font-weight: bold;
-    text-decoration: underline;
-    padding-top: 10em;
+.link {
+  color: rgb(110, 180, 162);
+  font-weight: bold;
+  text-decoration: underline;
+  padding-top: 10em;
 }
 
-.mail{
-    color: rgb(110, 180, 162);
-    font-weight: normal;
-    text-decoration: underline;
-    padding-top: 10em;
+.mail {
+  color: rgb(110, 180, 162);
+  font-weight: normal;
+  text-decoration: underline;
+  padding-top: 10em;
 }
 
-.c{
-    font-size: x-large;
-    font-style: normal;
-    font-weight: bold;
-    color: rgb(110, 180, 162);
+.c {
+  font-size: x-large;
+  font-style: normal;
+  font-weight: bold;
+  color: rgb(110, 180, 162);
 }
 
-.center{
-    width: 100%;
-    margin: 0 auto;
+.center {
+  width: 100%;
+  margin: 0 auto;
 }
 
-#infoConnectieHuys::before{
-display: block;
-content: " ";
-margin-top: -65px;
-height: 65px;
-visibility: hidden;
+#infoConnectieHuys::before {
+  display: block;
+  content: " ";
+  margin-top: -65px;
+  height: 65px;
+  visibility: hidden;
 }
 
 .carousel-control-next-icon,
@@ -63,39 +63,147 @@ visibility: hidden;
   filter: invert(1);
 }
 
-.paddingDiv{
-    padding-left: 3em;
-    padding-right: 3em;
+.paddingDiv {
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-.list-unstyled{
-    margin-top: 1rem;
+.list-unstyled {
+  margin-top: 1rem;
 }
 
-
-
-#ulLi{
-    margin-bottom: 1em;
+.h2Logo {
+  max-width: 100%;
+  text-align: center;
 }
 
-body{
-    margin: 0;
-    font-size: 17px;
-    background-color: #f9f9f9;
-    line-height: 1.6;
-    animation: bodyVisible;
-    animation-duration: 2s;
+#ulLi {
+  margin-bottom: 1em;
 }
 
-#showcase{
-    background-image: url('../img/logo_png.png');
+body {
+  margin: 0;
+  font-size: 17px;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+  animation: bodyVisible;
+  animation-duration: 2s;
+}
+
+#showcase {
+  background-image: url("../img/logo_png.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#showcase h1 {
+  font-size: 120px;
+  line-height: 1.2;
+  color: #f9f9f9;
+  text-shadow: 5px 5px 7px rgb(110, 180, 162);
+}
+
+#showcase .button {
+  opacity: 1;
+  font-size: 50px;
+  text-decoration: none;
+  color: rgb(110, 180, 162);
+  border: #f9f9f9f9 1px solid;
+  align-self: flex-end;
+  padding: 10px 2em;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#showcase:hover .button {
+  transition: 1s ease-in-out;
+  opacity: 1;
+}
+
+#showcase .button:hover {
+  background: rgb(110, 180, 162);
+  color: white;
+}
+
+.logoHeader {
+  height: 100vh;
+}
+
+#visible {
+  animation: logoVisibleHidden;
+  animation-duration: 4s;
+}
+
+#bodyHuys {
+  animation: bodyVisible;
+  animation-duration: 1s;
+}
+
+#logoVisibleOnLoad {
+  height: 100vh;
+}
+
+#logoVisibleOnLoad:hover {
+  transition: 1s ease-in-out;
+  opacity: 75%;
+}
+
+@viewport {
+  width: device-width;
+  height: 100vh;
+  zoom: 1;
+}
+
+@keyframes bodyVisible {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes logoVisibleHidden {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*RESPONSIVENESS*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .quoteLanding h2{
+    margin-top: -7.5em;
+    padding: 1em;
+    font-size: 25px;
+  }
+  .landingBody {
+    background-position: top;
+  }
+  #showcase {
+    background-image: url("../img/logo_png.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -103,89 +211,35 @@ body{
     align-items: center;
     text-align: center;
     padding: 0 20px;
-}
-
-#showcase h1{
-    font-size: 120px;
-    line-height: 1.2;
-    color: #f9f9f9;
-    text-shadow: 5px 5px 7px rgb(110, 180, 162);
-}
-
-#showcase p{
-    font-size: 20px;
-    float: right;
-}
-
-#showcase .button{
-    opacity: 0;
-    font-size: 40px;
+  }
+  #showcase .button {
+    opacity: 1;
+    font-size: 35px;
     text-decoration: none;
     color: rgb(110, 180, 162);
-    border: f9f9f9f9 1px solid;
-    float: right;
+    align-self: center;
     padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
+    margin-top: 2em;    
+  }
 
-#showcase:hover .button{
+  #showcase:hover .button {
     transition: 1s ease-in-out;
     opacity: 1;
-}
-
-#showcase .button:hover{
-    background: rgb(110, 180, 162);;
-    color: #ffffff;
-}
-
-.logoHeader{
-    height: 100vh;
-}
-
-#visible{
-    animation: logoVisibleHidden;
-    animation-duration: 4s;    
-}
-
-#bodyHuys{
-    animation: bodyVisible;
-    animation-duration: 1s;
-}
-
-#logoVisibleOnLoad{
-    height: 100vh;
-}
-
-#logoVisibleOnLoad:hover{
-    transition: 1s ease-in-out;
-    opacity: 75%;
-}
-
-
-@viewport{
-    width: device-width;
-    height: 100vh;
-    zoom: 1;
-}
-
-@keyframes bodyVisible{    
-    from {
-        opacity: 0;
-     }
-    50% {
-        opacity: 0.5;
-     }
-    to {
-        opacity: 1;
   }
 }
 
-@keyframes logoVisibleHidden{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;        
-    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
