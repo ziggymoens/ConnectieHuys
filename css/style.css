@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+#homeNav{
+  margin: -1em; 
+  border-bottom: rgb(110, 180, 162) 1px solid;
+}
+
 #logo-navbar {
   height: 200px;
   width: 200px;
@@ -12,7 +17,7 @@
 
 #active-link {
   font-weight: bold;
-  color: cmyk(56, 14, 40, 0);
+  color: rgb(110, 180, 162);;
 }
 
 #active-link:hover {
@@ -87,6 +92,7 @@ html {
 
 body {
   margin: 0;
+  padding: 1em;
   font-size: 17px;
   background-color: #f9f9f9;
   line-height: 1.6;
@@ -156,7 +162,7 @@ body {
 }
 
 #logoVisibleOnLoad:hover {
-  transition: 1s ease-in-out;
+  transition: 0.75s ease-in-out;
   opacity: 75%;
 }
 
@@ -169,9 +175,6 @@ body {
 @keyframes bodyVisible {
   from {
     opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
   }
   to {
     opacity: 1;
@@ -280,8 +283,79 @@ body {
         padding: 1em 1em 1em 1em;
         color: white;
       }
+
+      #imgIngeHuys{
+        width: 750px;
+        border-radius: 5px;
+        margin-left: -3em;
+      }
+
+      #imgOverInge{
+        width: 400px;
+        border-radius: 5px;
+      }
+
+      #imgLogoHuys{
+        padding-top: 1em;
+      }
+
+      #imgTextAbout{
+        padding: 2em;
+      }
+
+      #imgTextAbout p{
+        margin-left: 2em;
+      }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .quoteLanding h2{
+    margin-top: -7.5em;
+    padding: 1em;
+    font-size: 60px;
+  }
+  .quoteLanding p{
+      margin-top: -1em;
+      font-size: 50px;
+  }
+
+  footer{
+    margin-top: 2em;
+    font-size: 40px;
+  }
+  .landingBody {
+    background-position: top;
+  }
+  #showcase {
+    background-image: url("../img/logo_png.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  #showcase .button {
+    opacity: 1;
+    font-size: 60px;
+    text-decoration: none;
+    color: rgb(110, 180, 162);
+    align-self: flex-end;
+    padding: 10px 20px;
+    margin-top: 2em;    
+  }
+  #showcase:hover .button {
+    transition: 1s ease-in-out;
+    opacity: 1;
+  }
+  #showcase .button:hover {
+    background: rgb(110, 180, 162);
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    color: white;
+  }
 }
