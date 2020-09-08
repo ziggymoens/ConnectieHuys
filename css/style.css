@@ -90,6 +90,11 @@ html {
   margin-bottom: 1em;
 }
 
+#arrowDown1{
+  text-align: center; 
+  font-size: 3em; 
+}
+
 body {
   margin: 0;
   padding: 1em;
@@ -195,9 +200,9 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .quoteLanding h2{
-    margin-top: -7.5em;
+    margin-top: -10em;
     padding: 1em;
-    font-size: 25px;
+    font-size: 20px;
   }
   .landingBody {
     background-position: top;
@@ -229,6 +234,33 @@ body {
     transition: 1s ease-in-out;
     opacity: 1;
   }
+
+  #imgIngeHuys{
+    width: 280px;    
+    margin: auto;
+    padding-bottom: 1em;
+  }
+
+  #meerOver{
+    width: 100%;
+    text-align:center ;
+  }
+
+  #quoteHuys1{
+    margin-top: -2em;
+    margin-bottom: -1em;
+  }
+
+  #arrowDown1{
+    visibility: hidden;
+  }
+
+  #arrowUp1{
+    text-align: center; 
+    font-size: 3em; 
+    padding-bottom: 0.5em;
+  }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -305,6 +337,12 @@ body {
 
       #imgTextAbout p{
         margin-left: 2em;
+      }
+
+      #arrowUp1{
+        text-align: center; 
+        font-size: 3em; 
+        padding-bottom: 0.5em;
       }
 }
 
