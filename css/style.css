@@ -311,51 +311,45 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .quoteLanding h2{
-    margin-top: -7.5em;
-    padding: 1em;
-    font-size: 60px;
-  }
-  .quoteLanding p{
-      margin-top: -1em;
-      font-size: 50px;
-  }
-
-  footer{
-    margin-top: 2em;
-    font-size: 40px;
-  }
-  .landingBody {
-    background-position: top;
-  }
-  #showcase {
-    background-image: url("../img/logo_png.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-  }
-  #showcase .button {
-    opacity: 1;
-    font-size: 60px;
-    text-decoration: none;
-    color: rgb(110, 180, 162);
-    align-self: flex-end;
-    padding: 10px 20px;
-    margin-top: 2em;    
-  }
-  #showcase:hover .button {
-    transition: 1s ease-in-out;
-    opacity: 1;
-  }
-  #showcase .button:hover {
-    background: rgb(110, 180, 162);
-    padding: 1.5em 1.5em 1.5em 1.5em;
-    color: white;
-  }
+        margin-top: -7.5em;
+        padding: 1em;
+        font-size: 25px;
+      }
+      .quoteLanding p{
+          margin-top: -1em;
+      }
+      .landingBody {
+        background-position: top;
+      }
+      #showcase {
+        background-image: url("../img/logo_png.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+      }
+      #showcase .button {
+        opacity: 1;
+        font-size: 35px;
+        text-decoration: none;
+        color: rgb(110, 180, 162);
+        align-self: flex-end;
+        padding: 10px 20px;
+        margin-top: 2em;    
+      }
+      #showcase:hover .button {
+        transition: 1s ease-in-out;
+        opacity: 1;
+      }
+      #showcase .button:hover {
+        background: rgb(110, 180, 162);
+        padding: 1em 1em 1em 1em;
+        color: white;
+      }
 }
