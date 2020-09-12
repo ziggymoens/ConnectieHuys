@@ -3,8 +3,8 @@
   padding: 0;
 }
 
-#homeNav{
-  margin: -1em; 
+#homeNav {
+  margin: -1em;
   border-bottom: rgb(110, 180, 162) 1px solid;
 }
 
@@ -17,7 +17,7 @@
 
 #active-link {
   font-weight: bold;
-  color: rgb(110, 180, 162);;
+  color: rgb(110, 180, 162);
 }
 
 #active-link:hover {
@@ -90,9 +90,9 @@ html {
   margin-bottom: 1em;
 }
 
-#arrowDown1{
-  text-align: center; 
-  font-size: 3em; 
+#arrowDown1 {
+  text-align: center;
+  font-size: 3em;
 }
 
 body {
@@ -199,7 +199,7 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .quoteLanding h2{
+  .quoteLanding h2 {
     margin-top: -10em;
     padding: 1em;
     font-size: 20px;
@@ -227,7 +227,7 @@ body {
     color: rgb(110, 180, 162);
     align-self: center;
     padding: 10px 20px;
-    margin-top: 2em;    
+    margin-top: 2em;
   }
 
   #showcase:hover .button {
@@ -235,159 +235,257 @@ body {
     opacity: 1;
   }
 
-  #imgIngeHuys{
-    width: 280px;    
+  #imgIngeHuys {
+    width: 250px;
     margin: auto;
     padding-bottom: 1em;
   }
 
-  #meerOver{
+  #meerOver {
     width: 100%;
-    text-align:center ;
+    text-align: center;
   }
 
-  #quoteHuys1{
-    margin-top: -2em;
-    margin-bottom: -1em;
+  #quoteHuys1 {
+    margin: auto;
+    text-align: center;
   }
 
-  #arrowDown1{
+  #arrowDown1 {
     visibility: hidden;
   }
 
-  #arrowUp1{
-    text-align: center; 
-    font-size: 3em; 
+  #arrowUp1 {
+    text-align: center;
+    font-size: 3em;
     padding-bottom: 0.5em;
   }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  @media only screen and (max-width: 600px) {
+    .quoteLanding h2 {
+      margin-top: -10em;
+      padding: 1em;
+      font-size: 20px;
+    }
+    .landingBody {
+      background-position: top;
+    }
+    #showcase {
+      background-image: url("../img/logo_png.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    #showcase .button {
+      opacity: 1;
+      font-size: 35px;
+      text-decoration: none;
+      color: rgb(110, 180, 162);
+      align-self: center;
+      padding: 10px 20px;
+      margin-top: 2em;
+    }
+
+    #showcase:hover .button {
+      transition: 1s ease-in-out;
+      opacity: 1;
+    }
+
+    #imgIngeHuys {
+      width: 250px;
+      margin: auto;
+      padding-bottom: 1em;
+    }
+
+    #meerOver {
+      width: 100%;
+      text-align: center;
+    }
+
+    #quoteHuys1 {
+      margin: auto;
+      text-align: center;
+    }
+
+    #arrowDown1 {
+      visibility: hidden;
+    }
+
+    #arrowUp1 {
+      text-align: center;
+      font-size: 3em;
+      padding-bottom: 0.5em;
+    }
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  #imgIngeHuys {
+    width: 650px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .quoteLanding h2{
-        margin-top: -7.5em;
-        padding: 1em;
-        font-size: 25px;
-      }
-      .quoteLanding p{
-          margin-top: -1em;
-      }
-      .landingBody {
-        background-position: top;
-      }
-      #showcase {
-        background-image: url("../img/logo_png.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 20px;
-      }
-      #showcase .button {
-        opacity: 1;
-        font-size: 35px;
-        text-decoration: none;
-        color: rgb(110, 180, 162);
-        align-self: flex-end;
-        padding: 10px 20px;
-        margin-top: 2em;    
-      }
-      #showcase:hover .button {
-        transition: 1s ease-in-out;
-        opacity: 1;
-      }
-      #showcase .button:hover {
-        background: rgb(110, 180, 162);
-        padding: 1em 1em 1em 1em;
-        color: white;
-      }
+  .quoteLanding h2 {
+    margin-top: -7.5em;
+    padding: 1em;
+    font-size: 25px;
+  }
+  .quoteLanding p {
+    margin-top: -1em;
+  }
+  .landingBody {
+    background-position: top;
+  }
+  #showcase {
+    background-image: url("../img/logo_png.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  #showcase .button {
+    opacity: 1;
+    font-size: 35px;
+    text-decoration: none;
+    color: rgb(110, 180, 162);
+    align-self: flex-end;
+    padding: 10px 20px;
+    margin-top: 2em;
+  }
+  #showcase:hover .button {
+    transition: 1s ease-in-out;
+    opacity: 1;
+  }
+  #showcase .button:hover {
+    background: rgb(110, 180, 162);
+    padding: 1em 1em 1em 1em;
+    color: white;
+  }
 
-      #imgIngeHuys{
-        width: 750px;
-        border-radius: 5px;
-        margin-left: -3em;
-      }
+  #imgIngeHuys {
+    width: 750px;
+    border-radius: 5px;
+    margin-left: -3em;
+  }
 
-      #imgOverInge{
-        width: 400px;
-        border-radius: 5px;
-      }
+  #imgOverInge {
+    width: 400px;
+    border-radius: 5px;
+  }
 
-      #imgLogoHuys{
-        padding-top: 1em;
-      }
+  #imgLogoHuys {
+    padding-top: 1em;
+  }
 
-      #imgTextAbout{
-        padding: 2em;
-      }
+  #imgTextAbout {
+    padding: 2em;
+  }
 
-      #imgTextAbout p{
-        margin-left: 2em;
-      }
+  #imgTextAbout p {
+    margin-left: 2em;
+  }
 
-      #arrowUp1{
-        text-align: center; 
-        font-size: 3em; 
-        padding-bottom: 0.5em;
-      }
+  #arrowUp1 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+  }
+
+  #h1-inge{
+    margin-bottom: 1em;
+  }
+
+  #arrowDown1Over{
+    text-align: center;
+    padding-top: 5em;
+  }
+
+  #imgTextAbout div{
+    padding-bottom: 1em;
+  }
+
+  #imgTextAbout #div2{
+    padding-top: 2em;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .quoteLanding h2{
-        margin-top: -7.5em;
-        padding: 1em;
-        font-size: 25px;
-      }
-      .quoteLanding p{
-          margin-top: -1em;
-      }
-      .landingBody {
-        background-position: top;
-      }
-      #showcase {
-        background-image: url("../img/logo_png.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 20px;
-      }
-      #showcase .button {
-        opacity: 1;
-        font-size: 35px;
-        text-decoration: none;
-        color: rgb(110, 180, 162);
-        align-self: flex-end;
-        padding: 10px 20px;
-        margin-top: 2em;    
-      }
-      #showcase:hover .button {
-        transition: 1s ease-in-out;
-        opacity: 1;
-      }
-      #showcase .button:hover {
-        background: rgb(110, 180, 162);
-        padding: 1em 1em 1em 1em;
-        color: white;
-      }
+@media only screen and (min-width: 1441px) {
+  .quoteLanding h2 {
+    margin-top: -7.5em;
+    padding: 1em;
+    font-size: 25px;
+  }
+  .quoteLanding p {
+    margin-top: -1em;
+  }
+  .landingBody {
+    background-position: top;
+  }
+  #showcase {
+    background-image: url("../img/logo_png.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  #showcase .button {
+    opacity: 1;
+    font-size: 35px;
+    text-decoration: none;
+    color: rgb(110, 180, 162);
+    align-self: flex-end;
+    padding: 10px 20px;
+    margin-top: 2em;
+  }
+  #showcase:hover .button {
+    transition: 1s ease-in-out;
+    opacity: 1;
+  }
+  #showcase .button:hover {
+    background: rgb(110, 180, 162);
+    padding: 1em 1em 1em 1em;
+    color: white;
+  }
+
+  #imgIngeHuys{
+    width: 1000px;
+    margin-left: -15em;
+  }
+
+  #textIngeHuys{
+    font-size: 20px;
+    margin-right: -15em;
+  }
+
+
+  #h1-inge{
+    padding-bottom: 2em;
+  }
 }
