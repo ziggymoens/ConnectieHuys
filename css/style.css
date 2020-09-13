@@ -235,6 +235,10 @@ body {
     opacity: 1;
   }
 
+  #HuysContainer{
+    padding-top: 3em;
+  }
+
   #imgIngeHuys {
     width: 250px;
     margin: auto;
@@ -263,8 +267,7 @@ body {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  @media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px){
     .quoteLanding h2 {
       margin-top: -10em;
       padding: 1em;
@@ -301,10 +304,13 @@ body {
       opacity: 1;
     }
 
+    #HuysContainer{
+      padding-top: 3em;
+    }
+
     #imgIngeHuys {
-      width: 250px;
+      max-width: 100%;
       margin: auto;
-      padding-bottom: 1em;
     }
 
     #meerOver {
@@ -317,22 +323,18 @@ body {
       text-align: center;
     }
 
-    #arrowDown1 {
-      visibility: hidden;
-    }
-
     #arrowUp1 {
       text-align: center;
       font-size: 3em;
       padding-bottom: 0.5em;
     }
   }
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #imgIngeHuys {
-    width: 650px;
+    max-width: 100%;
+    padding-left: 1.5em;
   }
 }
 
@@ -382,7 +384,7 @@ body {
   }
 
   #imgIngeHuys {
-    width: 750px;
+    width: 100%;
     border-radius: 5px;
     margin-left: -3em;
   }
