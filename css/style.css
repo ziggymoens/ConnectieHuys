@@ -421,6 +421,18 @@ body {
     padding-top: 5em;
   }
 
+  #arrowDown{
+    color: rgb(110, 180, 162);
+    padding: 1em;
+    border-radius: 10px;
+  }
+
+  #arrowDown:hover{
+    transition: 1s ease-in-out;
+    background-color: rgb(110, 180, 162);
+    color: white;
+  }
+
   #imgTextAbout div{
     padding-bottom: 1em;
   }
