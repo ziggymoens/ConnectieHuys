@@ -1,6 +1,10 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+var script = document.createElement('script');
+script.type = 'text/javascript';
 
-$(document).ready(function(){
+script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js';
+
+
+document.body.appendChild(script);$(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
