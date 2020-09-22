@@ -279,6 +279,9 @@ body {
     font-size: 3em;
     padding-bottom: 0.5em;
   }
+  #leftCol {
+    border-bottom: 2px solid rgb(110, 180, 162);
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -343,6 +346,9 @@ body {
       font-size: 3em;
       padding-bottom: 0.5em;
     }
+    #leftCol {
+      border-right: 2px solid rgb(110, 180, 162);
+    }
   }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -351,6 +357,10 @@ body {
     max-width: 100%;
     padding-left: 1.5em;
   }
+  #leftCol {
+    border-right: 2px solid rgb(110, 180, 162);
+  }
+  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -455,6 +465,9 @@ body {
   #imgTextAbout #div2{
     padding-top: 2em;
   }
+  #leftCol {
+    border-right: 2px solid rgb(110, 180, 162);
+  }
 
 }
 
@@ -516,5 +529,9 @@ body {
 
   #h1-inge{
     padding-bottom: 2em;
+  }
+
+  #leftCol {
+    border-right: 2px solid rgb(110, 180, 162);
   }
 }
