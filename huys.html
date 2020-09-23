@@ -27,7 +27,7 @@
 
     <div id="hidden">
         <!-- section navbar-->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light
+        <nav class="navbar navbar-expand-lg navbar-light
                 bg-light" id="homeNav">
             <a class="navbar-brand" href="index.html"><img id="logo-navbar" src="../img/logo_png.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -65,13 +65,13 @@
 
 
         <div class="container" id="HuysContainer">
-            <div class="row">
-                <div class="col">
-                    <img src="/img/IMG_0754_med.jpg" id="imgIngeHuys" class="img-responsive img-center" alt="Inge Huys">
+            <div class="row h-100">
+                <div class="col-lg-4 col-md-6 my-auto">
+                    <img src="/img/IMG_0754_med.jpg" class="img-fluid" alt="Inge Huys">
                 </div>
-                <div class="col align-self-center" id="textIngeHuys">
-                    <h2>Het begint met verwondering...</h2>
-                    <p>
+                <div class="col-lg-8 col-md-6">
+                    <h2 class="text-center">Het begint met verwondering...</h2>
+                    <p class="text-center lead">
                         Het ConnectieHuys is een smeltkroes van verbinding, kracht, dynamische communicatie, plezier en
                         verandering. <br>
                         Door middel van persoonlijke coaching en trainingen in verbindend communiceren bied ik
@@ -82,11 +82,10 @@
                         <br>
 
                     </p>
-                    <br>
-                    <h3 class="d-flex justify-content-center text-muted" id="quoteHuys1">Samen
-                        verbinden in eigen kracht</h3>
                 </div>
             </div>
+            <div class="display-4 text-center pt-4">Samen
+                verbinden in eigen kracht</h3></div>
         </div>
         <br>
 
@@ -95,12 +94,12 @@
                     class="fa fa-arrow-down js-scroll-trigger" aria-hidden="true"></i></a>
         </div>
 
-        <div id="infoConnectieHuys">
-            <div class="crop text-center">
+        <div class="container">
+            <div class="text-center">
                 <img class="home img-fluid" src="/img/logo_png_mini.png" id="imgLogoHuys">
             </div>
-            <div class=" text-center">
-                <h3 class="text-center">Wie is Inge</h3>
+            <div class="text-center">
+                <h2>Wie is Inge</h3>
                 <p>
                     Ik hou ongelooflijk van esthetiek, “schoonheid” in de heel ruime zin van het woord.
                     Natuur, kunst, muziek, ambacht, mensen.
@@ -116,46 +115,30 @@
                         over Inge</a>
                 </p>
             </div>
-            <div class="row paddingDiv">
-                <h3>Wat we doen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    at iste
-                    mollitia aliquam impedit odio sunt quam magnam minus, eos,
-                    cum magni
-                    libero corrupti quo commodi earum, labore accusantium ab.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Repellendus,
-                    vitae facilis voluptatem officiis et esse quo deleniti illum
-                    dolores
-                    harum at nisi consequatur dolorem! Eligendi officia
-                    accusantium illum
-                    molestias eos.
-                </p>
-            </div>
-            <div class="row paddingDiv">
-                <h3>Waarom we dat doen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    at iste
-                    mollitia aliquam impedit odio sunt quam magnam minus, eos,
-                    cum magni
-                    libero corrupti quo commodi earum, labore accusantium ab.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Repellendus,
-                    vitae facilis voluptatem officiis et esse quo deleniti illum
-                    dolores
-                    harum at nisi consequatur dolorem! Eligendi officia
-                    accusantium illum
-                    molestias eos.
+            <div class="text-center pt-4">
+                <h2>Voor wie</h3>
+                <p>Jongeren die daadkrachtiger willen communiceren met hun ouders, vrienden, leerkrachten zonder telkens in discussies te verzeilen.<br>
+                    Ouders die van een gedragsmatige naar een verbindende aanpak in de opvoeding van hun kinderen willen groeien. Vitaler communiceren tussen partners en werkelijk de gelijkwaardigheid willen bewaren zonder dat de moed je in de schoenen zakt.<br>
+                    Ieder individu die een taal wil leren die de verbinding met zichzelf en de ander behoudt. Taal die ons samenbrengt ivp ons van elkaar verwijdert.<br>
+                    Voor elk bedrijf die zorg draagt van zijn Human Capital en een duurzame ‘gezondheid’ van dit bedrijf beoogt met gelukkige medewerkers.<br>
+                    Organisaties met sterk geëngageerde medewerkers behalen 2 maal het netto inkomen van organisaties waar het engagement lager ligt.<br>
+                    Verenigingen, scholen, besturen, artsen (huisartsenkringen LOC) die hunkeren naar een vlotte samenwerking, krachtige en eerlijke gesprekken en graag een gunstig klimaat bewaren waarin efficiënt wordt gecommuniceerd.<br>
+                    
                 </p>
             </div>
 
 
             <!--Carousel C's-->
             <div class="container">
+                <div class="text-center pt-4">
+                    <h2>
+                        Onze waarden<small class="text-muted"> - Klik voor meer info</small>
+                      </h2>
+                </div>
                 <div id="carouselContent" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active text-center p-4">
-                            <p><i class="c">C</i>onnectie</p>
+                            <a data-toggle="modal" data-target="#connectie"><i class="c">C</i>onnectie</a>
                         </div>
                         <div class="carousel-item text-center p-4">
                             <p><i class="c">C</i>are</p>
@@ -194,16 +177,38 @@
                             <p><i class="c">C</i>lear</p>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" data-target="#carouselContent" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                    <a class="carousel-control-next" data-target="#carouselContent" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
+
+            <div class="modal fade" id="connectie" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title"><i class="c">C</i>onnectie</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        Vanuit verschillende opleidingen ‘geweldloze communicatie’ ga ik met jou in communicatie met een open en niet categoriserende blik. Verbinding met mezelf en de ander is het hoogste goed. Connectie tussen hoofd en hart geeft een gevoel van eenheid.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+
         </div>
 
 
