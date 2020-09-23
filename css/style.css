@@ -65,6 +65,10 @@
   color: rgb(110, 180, 162);
 }
 
+.cTitle{
+  color: rgb(110, 180, 162);
+}
+
 .center {
   width: 100%;
   margin: 0 auto;
@@ -556,7 +560,7 @@ body {
 	font: bold 16px sans-serif;
 
 	padding: 55px 50px;
-	margin-top: 80px;
+  margin-top: 80px;
 }
 
 .footer-distributed .footer-left,
@@ -695,6 +699,11 @@ body {
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+.footer-fixed{
+  position: fixed;
+  bottom: 0;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
