@@ -48,7 +48,7 @@
   color: rgb(110, 180, 162);
   font-weight: bold;
   text-decoration: underline;
-  padding-top: 10em;
+  /* padding-top: 10em; */
 }
 
 .mail {
@@ -268,10 +268,6 @@ body {
     padding-bottom: 1em;
   }
 
-  #meerOver {
-    width: 100%;
-    text-align: center;
-  }
 
   #quoteHuys1 {
     margin: auto;
