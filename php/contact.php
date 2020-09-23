@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $mailTo = "info@connectiehuys.be";
+    $mailTo = "Inge@connectiehuys.be";
     $headers = "Je hebt een email ontvangen van " . $fname . " " . $lname . " vanuit het contactformulier!\n\n";
     $txt = "Email: " . $mailFrom . "\n
     \nPersoon heeft volgend bericht meegegeven: \n\n" . $message;
