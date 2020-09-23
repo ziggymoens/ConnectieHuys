@@ -186,6 +186,10 @@ body {
   opacity: 75%;
 }
 
+#socials{
+  color: rgb(110, 180, 162);
+}
+
 @viewport {
   width: device-width;
   height: 100vh;
