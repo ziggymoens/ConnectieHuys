@@ -14,7 +14,33 @@ if(isset($_POST['submit'])){
     $txt = "Email: ".$mailFrom."\n
     \nPersoon heeft volgend bericht meegegeven: \n\n".$message;
 
-    mail($mailTo, $subject, $txt, $headers);
-    header("Location: ./../contact.html?mailsent");
+    $sent = mail($mailTo, $subject, $txt, $headers);
+    // header("Location: ../contact.html?mailsent");
 }
-?>
+if ($sent) {
+
+    ?><html>
+    <head>
+    <title>Thank You</title>
+    </head>
+    <body>
+    <h1>Thank You</h1>
+    <p>Thank you for your feedback.</p>
+    </body>
+    </html>
+    
+    <?php
+    
+    } else {
+    ?><html>
+    <head>
+    <title>Something went wrong</title>
+    </head>
+    <body>
+    <h1>Something went wrong</h1>
+    <p>We could not send your feedback. Please try again.</p>
+    </body>
+    </html>
+    <?php
+    }
+    ?>
