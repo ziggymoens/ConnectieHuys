@@ -723,3 +723,11 @@ body {
 	}
 
 }
+
+.nav-tabs>.nav-item>.nav-link.active{
+  color:rgb(110, 180, 162)!important;
+}
+
+.nav-link{
+  color: black!important;
+}
