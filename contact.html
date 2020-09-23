@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
+<header>
   <!-- section navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="homeNav">
     <a class="navbar-brand" href="index.html"><img id="logo-navbar" src="img/logo_png.png"></a>
@@ -45,124 +44,132 @@
       </ul>
     </div>
   </nav>
+</header>
+
+<body>
   <div class="pt-5 pb-5">
-    <div class="row">
-      <div class="col-sm" id="leftCol">
+    <div class="row h-100">
+      <div class="col-lg-6 text-center my-auto" id="leftCol">
         <img src="/img/logo_png.png" alt="Logo ConnectieHuys" class="img-fluid">
       </div>
-
-      <div class="col-sm">
+      <div class="col-lg-6">
         <h2 class="pt-4 text-center">Contacteer mij</h2>
-        <p>
-          Inge Huys <br>
-          0479 53 58 29 <br>
-          Inge@ConnectieHuys.be <br>
-          <br>
-          ConnectieHuys <br>
-          BE53 7310 4608 2853
-        </p>
-        <div class="text-center">
-          <h4>Social Media</h4>
-          <div class="text-center">
-            <!--Voorlopig nog geen facebook!-->
-            <!-- <a href="" target="_blank">
-              <span class="fa-stack fa-3x">
-                <i class="fa fa-circle fa-stack-2x" id="facebook"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
-            </a> -->
-            <a href="" target="_blank">
-              <span class="fa-stack fa-3x">
-                <i class="fa fa-circle fa-stack-2x" id="socials"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-            <a href="https://www.linkedin.com/in/inge-huys-5a349091/" target="_blank">
-              <span class="fa-stack fa-3x">
-                <i class="fa fa-circle fa-stack-2x" id="socials"></i>
-                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 h-100 my-auto">
+              <p>
+                <span class="h4">Inge Huys</span><br>
+                <span class="pr-3"><i class="fa fa-phone" style="color: rgb(110, 180, 162);"></i></span>
+                +32 (0)479 53 58 29 <br>
+                <span class="pr-3"><i class="fa fa-envelope" style="color: rgb(110, 180, 162);"></i></span>
+                Inge@ConnectieHuys.be <br>
+                <br>
+                <span class="h6">ConnectieHuys</span> - BE53 7310 4608 2853
+              </p>
+            </div>
+            <div class="col-lg-4 h-100">
+              <div class="row text-center">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
+                  <a href="" target="_blank">
+                    <span class="fa-stack fa-3x">
+                      <i class="fa fa-circle fa-stack-2x" id="socials"></i>
+                      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </div>
+                <div class=" col-xs-6 col-sm-6 col-md-6 col-lg-12" >
+                  <a href="https://www.linkedin.com/in/inge-huys-5a349091/" target="_blank">
+                    <span class="fa-stack fa-3x">
+                      <i class="fa fa-circle fa-stack-2x" id="socials"></i>
+                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
           </div>
-          Contacteer mij! <br>
-          <a href="#form" class="smooth-scroll text-center"><i class="fa fa-arrow-down" aria-hidden="true"
-              id="arrowDown"></i></a></a>
+          <div class="pt-5 text-center">
+            <div class="h4">Stuur mij een bericht</div>
+          </div>
+
+      
+          <div class="container pt-4" id="form">
+            <form class="needs-validation" action="./php/contact.php" method="POST" novalidate>
+              <div class="form-group row">
+                <label class="col-lg-2 col-md-3 col-sm-4 col-form-label required" for="fname">Voornaam</label>
+                <div class="col-lg-10 col-md-9 col-sm-8">
+                  <input type="text" name="fname" class="form-control" placeholder="Voornaam" id="fname" required>
+                  <div class="valid-feedback">
+                    Ziet er goed uit!
+                  </div>
+                  <div class="invalid-feedback">
+                    Gelieve uw voornaam in te vullen.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-2 col-md-3 col-sm-4 col-form-label required" for="lname">Achternaam</label>
+                <div class="col-lg-10 col-md-9 col-sm-8">
+                  <input type="text" name="lname" class="form-control" placeholder="Achternaam" id="lname" required>
+                  <div class="valid-feedback">
+                    Ziet er goed uit!
+                  </div>
+                  <div class="invalid-feedback">
+                    Gelieve uw achternaam in te vullen.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-2 col-md-3 col-sm-4 col-form-label required" for="emailInput">E-mail
+                  adres</label>
+                <div class="col-lg-10 col-md-9 col-sm-8">
+                  <input type="email" name="mail" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                    placeholder="Vul je e-mail adres in" required>
+                  <div class="valid-feedback">
+                    Ziet er goed uit!
+                  </div>
+                  <div class="invalid-feedback">
+                    Gelieve uw email adres in te vullen.
+                  </div>
+                  <small id="emailHelp" class="form-text text-muted">ConnectieHuys deelt uw e-mail adres niet met
+                    derden.</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-2 col-md-3 col-sm-4 col-form-label required" for="subject">Onderwerp</label>
+                <div class="col-lg-10 col-md-9 col-sm-8">
+                  <input type="text" name="subject" class="form-control" id="subject" aria-describedby="subjectHelp"
+                    placeholder="Vul het onderwerp in" required>
+                  <div class="valid-feedback">
+                    Ziet er goed uit!
+                  </div>
+                  <div class="invalid-feedback">
+                    Gelieve een onderwerp in te vullen.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-2 col-md-3 col-sm-4 col-form-label required" for="messagePartner">Bericht</label>
+                <div class="col-lg-10 col-md-9 col-sm-8">
+                  <textarea name="message" class="form-control" id="messagePartner" rows="3" required minlength="10"
+                    maxlength="1500" placeholder="Laat hier uw bericht achter..."></textarea>
+                  <div class="valid-feedback">
+                    Ziet er goed uit!
+                  </div>
+                  <div class="invalid-feedback">
+                    Gelieve een bericht in te vullen.
+                  </div>
+                </div>
+              </div>
+              <div class="text-center align-content-center">
+                <button class="btn btn-primary  id=" submitButton" type="submit" name="submit">Verstuur!</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="container pt-5" id="form">
-    <form class="needs-validation" action="./php/contact.php" method="POST" novalidate>
-      <div class="form-group row">
-        <label class="col-lg-2 col-md-3 col-sm-4 col-form-label required" for="fname">Voornaam</label>
-        <div class="col-lg-4 col-md-9 col-sm-6">
-          <input type="text" name="fname" class="form-control" placeholder="Voornaam" id="fname" required>
-          <div class="valid-feedback">
-            Ziet er goed uit!
-          </div>
-          <div class="invalid-feedback">
-            Gelieve uw voornaam in te vullen.
-          </div>
-        </div>
-
-        <label class="col-lg-2 col-md-3 col-sm-4 col-form-label required" for="lname">Achternaam</label>
-        <div class="col-lg-4 col-md-9 col-sm-6">
-          <input type="text" name="lname" class="form-control" placeholder="Achternaam" id="lname" required>
-          <div class="valid-feedback">
-            Ziet er goed uit!
-          </div>
-          <div class="invalid-feedback">
-            Gelieve uw achternaam in te vullen.
-          </div>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-lg-2 col-md-3 col-sm-4 col-form-label required" for="emailInput">E-mail
-          adres</label>
-        <div class="col-lg-10 col-md-9 col-sm-8">
-          <input type="email" name="mail" class="form-control" id="emailInput" aria-describedby="emailHelp"
-            placeholder="Vul je e-mail adres in" required>
-          <div class="valid-feedback">
-            Ziet er goed uit!
-          </div>
-          <div class="invalid-feedback">
-            Gelieve uw email adres in te vullen.
-          </div>
-          <small id="emailHelp" class="form-text text-muted">ConnectieHuys deelt uw e-mail adres niet met
-            derden.</small>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-lg-2 col-md-3 col-sm-4 col-form-label required" for="subject">Onderwerp</label>
-        <div class="col-lg-10 col-md-9 col-sm-8">
-          <input type="text" name="subject" class="form-control" id="subject" aria-describedby="subjectHelp"
-            placeholder="Vul het onderwerp in" required>
-          <div class="valid-feedback">
-            Ziet er goed uit!
-          </div>
-          <div class="invalid-feedback">
-            Gelieve een onderwerp in te vullen.
-          </div>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-lg-2 col-md-3 col-sm-4 col-form-label required" for="messagePartner">Bericht</label>
-        <div class="col-lg-10 col-md-9 col-sm-8">
-          <textarea name="message" class="form-control" id="messagePartner" rows="3" required minlength="10"
-            maxlength="1500" placeholder="Laat hier uw bericht achter..."></textarea>
-          <div class="valid-feedback">
-            Ziet er goed uit!
-          </div>
-          <div class="invalid-feedback">
-            Gelieve een bericht in te vullen.
-          </div>
-        </div>
-      </div>
-      <div class="text-center align-content-center">
-        <button class="btn btn-primary  id=" submitButton" type="submit" name="submit">Verstuur!</button>
-      </div>
-    </form>
   </div>
 
   <!--end of section navbar-->
