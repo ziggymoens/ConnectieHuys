@@ -15,6 +15,6 @@ if(isset($_POST['submit'])){
     \nPersoon heeft volgend bericht meegegeven: \n\n".$message;
 
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: www.connectiehuys.be/confirm.html");
+    header("Location: ../confirm.html?mailsent");
 }
 ?>
