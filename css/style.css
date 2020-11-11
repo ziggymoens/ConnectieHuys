@@ -15,6 +15,10 @@
   margin-bottom: -2em;
 }
 
+.hoverHand{
+  cursor:pointer;
+}
+
 #active-link {
   font-weight: bold;
   color: rgb(110, 180, 162);
@@ -734,5 +738,3 @@ body {
 .nav-link.active{
   color:rgb(110, 180, 162)!important;
 }
-
-
