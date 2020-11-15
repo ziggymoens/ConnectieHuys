@@ -78,6 +78,16 @@
   margin: 0 auto;
 }
 
+.btn-primary{
+  background-color: rgb(110, 180, 162);
+  border: black;
+}
+
+.btn-primary:hover{
+  background-color: #f9f9f9;
+  color: rgb(110, 180, 162);  
+}
+
 #infoConnectieHuys::before {
   display: block;
   content: " ";
