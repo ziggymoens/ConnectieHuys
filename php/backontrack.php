@@ -6,13 +6,15 @@ if(isset($_POST['submit'])){
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $mailFrom = $_POST['mail'];
-    $subject = "Inschrijving Back on Track";    
+    $phone = $_POST['phone'];
+    $subject = "Nieuwe inschrijving Back On Track";
 
     $mailTo = "inge@connectiehuys.be";
-    $headers = "Je hebt een inschrijving ontvangen van ".$fname." ".$lname." om zich in te schrijven voor een back on track workshop!\n\n";
-    $txt = "Email: ".$mailFrom."\n";
+    $headers = "Je hebt een nieuwe inschrijving voor Back On Track!\n\n";
+    $txt = "Gegevens van persoon: \n\nNaam: ".$fname." ".$lname."\n"."Email: ".$mailFrom."
+    \n"."Telefoonnummer: ".$phone."\n";
 
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: ../confirm.html?mailsent");
+    header("Location: ../confirmBOT.html?mailsent");
 }
 ?>
